@@ -1,0 +1,55 @@
+---
+title: "Homework 2: R portion - Exploring ggplot2"
+author: "YOUR NAME HERE"
+date: "Fall 2026"
+output: html_document
+---
+
+## EXPLORING ggplot2
+
+#### For the following exercises, you will be exploring a dataset collected on the game Pokemon Go. As noted in the \href{https://www.openintro.org/stat/data/?data=pokemon}{dataset description} on OpenIntro, "A key part of Pokémon Go is using evolutions to get stronger Pokemon, and a deeper understanding of evolutions is key to being the greatest Pokemon Go player of all time. This data set covers 75 Pokemon evolutions spread across four species. A wide set of variables are provided, allowing a deeper dive into what characteristics are important in predicting a Pokemon's final combat power (CP)." 
+
+```{r pokemon go setup, message=FALSE}
+## load ggplot2 package
+library(ggplot2)
+
+## load openintro package to access data
+library(openintro)
+
+```
+
+The book [R for Data Science]("https://r4ds.had.co.nz/") can be a great resource for you as you learn more about what we can do in R. While a lot of it is advanced, it does have great examples for data visualizations. Open the PDF of the book in your browser. For this exercise, you will use the table of contents: Click on **3. Data Visualization** and then on **3.8 Position Adjustments**. Using the pokemon data, and specifically the variables `attack_weak_type` and `attack_weak_type_new`, generate the same bar plots that were generated for the diamonds data set in the book example. You should make 7 plots in total (I have already included the R chunks for your convenience). Pay attention to the subtle differences in the code that let you change how these plots look.
+
+- For these first two plots, choose either of the two variables to depict in your bar chart. What is the difference between these two plots? What piece of the code accomplished this change?
+
+```{r bar chart color outline, fig.cap="R Exercise Plot 1", out.width = '50%', fig.align='center', tidy=TRUE}
+
+```
+
+```{r bar chart color fill, fig.cap="R Exercise Plot 2", out.width = '50%', fig.align='center', tidy=TRUE}
+
+```
+
+- For the rest of the plots, you will be using both variables. Identify the plots that we have studied in class. What are the differences among these five plots? What pieces of code accomplished these changes?
+
+```{r stacked bar chart, fig.cap="R Exercise Plot 3", out.width = '50%', fig.align='center', tidy=TRUE}
+
+```
+
+```{r stacked bar chart translucent, fig.cap="R Exercise Plot 4", out.width = '50%', fig.align='center', tidy=TRUE}
+
+```
+
+```{r stacked bar chart no fill, fig.cap="R Exercise Plot 5", out.width = '50%', fig.align='center', tidy=TRUE}
+
+```
+
+- Based on the last three plots you generated, what is the default argument for position?
+
+```{r standardized stacked bar chart, fig.cap="R Exercise Plot 6", out.width = '50%', fig.align='center', tidy=TRUE}
+
+```
+
+```{r side-by-side bar chart, fig.cap="R Exercise Plot 7", out.width = '50%', fig.align='center', tidy=TRUE}
+
+```
